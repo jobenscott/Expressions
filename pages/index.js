@@ -544,7 +544,7 @@ const handleTabChange = (event, newValue) => {
     const accounts = await web3.eth.requestAccounts();
     console.log('hey', accounts);
     // const result = await contract.methods.mint().send({ from: accounts[0],value: web3.utils.toWei("0.0042", "ether") });
-    const result = await contract.methods.safeMint(seed).send({ from: accounts[0] });
+    const result = await contract.methods.safeMint(seed).send({ from: accounts[0], value: web3.utils.toWei("0.001", "ether") });
     console.log(result);
   };
 
@@ -713,19 +713,19 @@ const handleTabChange = (event, newValue) => {
     <Grid item xs={12}>
     {/* <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 1 }}> */}
       <Button variant="contained" color="primary" onClick={handleRandomize}>
-        Randomize
+        Random Expression
       </Button>
       {/* <Typography variant="h6">Seed: {seed}</Typography> */}
     {/* </Box> */}
     </Grid>
-    <Grid item xs={12}>
+    <Grid item xs={12} sx={{pb: 5}}>
       <Button variant="contained" color="primary" onClick={handleMint}>
         Mint
       </Button>
     </Grid>
-    <Grid item xs={12}>
+    {/* <Grid item xs={12}>
       <Typography variant="h6">Seed: {generateSeed()}</Typography>
-    </Grid>
+    </Grid> */}
   </Grid>
 </Container>
     // <div style={{ display: "flex", flexDirection: "row" }}>
