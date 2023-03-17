@@ -358,13 +358,8 @@
 	{
 		"inputs": [
 			{
-				"internalType": "uint256[]",
-				"name": "values",
-				"type": "uint256[]"
-			},
-			{
 				"internalType": "string",
-				"name": "str_values",
+				"name": "seed",
 				"type": "string"
 			}
 		],
@@ -430,29 +425,25 @@
 				"internalType": "string",
 				"name": "seed",
 				"type": "string"
+			},
+			{
+				"internalType": "uint8",
+				"name": "randomType",
+				"type": "uint8"
+			},
+			{
+				"internalType": "uint256",
+				"name": "tokenId",
+				"type": "uint256"
 			}
 		],
-		"name": "selectFill",
+		"name": "selectColor",
 		"outputs": [
 			{
 				"internalType": "string",
 				"name": "",
 				"type": "string"
-			}
-		],
-		"stateMutability": "view",
-		"type": "function"
-	},
-	{
-		"inputs": [
-			{
-				"internalType": "string",
-				"name": "seed",
-				"type": "string"
-			}
-		],
-		"name": "selectStroke",
-		"outputs": [
+			},
 			{
 				"internalType": "string",
 				"name": "",
