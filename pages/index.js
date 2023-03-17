@@ -406,7 +406,7 @@ const Slider = ({ id, name, config, onValuesChange }) => {
 };
 
 const web3 = new Web3(Web3.givenProvider || 'http://localhost:8545');
-const contractAddress = '0x313393e374faB637AC1f69604fB8142dA0072BEC';
+const contractAddress = '0x707859dBfA8e79ff57763ba434f34F632dB40b11';
 const contract = new web3.eth.Contract(contractABI, contractAddress);
 
 

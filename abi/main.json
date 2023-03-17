@@ -365,7 +365,7 @@
 		],
 		"name": "safeMint",
 		"outputs": [],
-		"stateMutability": "nonpayable",
+		"stateMutability": "payable",
 		"type": "function"
 	},
 	{
